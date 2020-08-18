@@ -1,6 +1,6 @@
-package begad.bc.utils;
+package begad.mc.bc.utils;
 
-import begad.utils.UpdateAPI;
+import begad.mc.utils.UpdateAPI;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;

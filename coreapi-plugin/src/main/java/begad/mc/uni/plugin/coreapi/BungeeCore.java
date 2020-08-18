@@ -1,4 +1,4 @@
-package begad.uni.plugin.coreapi;
+package begad.mc.uni.plugin.coreapi;
 
 import net.md_5.bungee.api.plugin.Plugin;
 

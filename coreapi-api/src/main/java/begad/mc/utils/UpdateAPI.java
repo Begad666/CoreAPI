@@ -1,4 +1,4 @@
-package begad.utils;
+package begad.mc.utils;
 
 import com.google.common.base.Preconditions;
 
