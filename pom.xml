@@ -7,7 +7,7 @@
     <groupId>begad.mc.apis</groupId>
     <artifactId>CoreAPI</artifactId>
     <packaging>pom</packaging>
-    <version>v1.1</version>
+    <version>v1.2</version>
     <modules>
         <module>coreapi-api</module>
         <module>coreapi-plugin</module>
