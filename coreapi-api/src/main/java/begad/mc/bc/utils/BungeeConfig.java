@@ -1,4 +1,4 @@
-package begad.bc.utils;
+package begad.mc.bc.utils;
 
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;

@@ -2,19 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>begad.apis</groupId>
-	<artifactId>CoreAPI</artifactId>
-	<packaging>pom</packaging>
-	<version>v1.1</version>
-	<modules>
-		<module>coreapi-api</module>
-		<module>coreapi-plugin</module>
-	</modules>
+    <groupId>begad.mc.apis</groupId>
+    <artifactId>CoreAPI</artifactId>
+    <packaging>pom</packaging>
+    <version>v1.1</version>
+    <modules>
+        <module>coreapi-api</module>
+        <module>coreapi-plugin</module>
+    </modules>
 
-	<repositories>
-		<repository>
+    <repositories>
+        <repository>
 			<id>sonatype</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</repository>
