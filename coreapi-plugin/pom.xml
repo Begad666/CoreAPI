@@ -5,8 +5,7 @@
 	<parent>
 		<artifactId>CoreAPI</artifactId>
 		<groupId>begad.mc.apis</groupId>
-		<version>v1.1</version>
-		<relativePath>../pom.xml</relativePath>
+		<version>v1.2</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
