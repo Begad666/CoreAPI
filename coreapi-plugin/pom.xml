@@ -64,14 +64,25 @@
 			<type>javadoc</type>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>1.16.1-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.spigotmc</groupId>
+			<artifactId>spigot-api</artifactId>
+			<version>1.16.1-R0.1-SNAPSHOT</version>
+			<type>javadoc</type>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
-
-	<distributionManagement>
+	<repositories>
 		<repository>
-			<id>github</id>
-			<name>GitHub Begad666 Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/Begad666/CoreAPI</url>
+			<id>spigotmc-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
 		</repository>
-	</distributionManagement>
+	</repositories>
 
 </project>

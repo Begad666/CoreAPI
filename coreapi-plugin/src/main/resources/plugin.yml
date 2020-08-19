@@ -1,5 +1,5 @@
 name: CoreAPI
 author: begad
-version: v1
+version: v1.2
 description: Core API for my plugins
-main: begad.uni.plugin.coreapi.SpigotCore
+main: begad.mc.uni.plugin.coreapi.SpigotCore

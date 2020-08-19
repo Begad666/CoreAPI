@@ -1,5 +1,5 @@
-name: CoreAPi
+name: CoreAPI
 author: begad
-version: v1
+version: v1.2
 description: Core API for my plugins
-main: begad.uni.plugin.coreapi.BungeeCore
+main: begad.mc.uni.plugin.coreapi.BungeeCore
