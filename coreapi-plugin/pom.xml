@@ -85,4 +85,12 @@
 		</repository>
 	</repositories>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>Github Begad666 Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/Begad666/CoreAPI</url>
+		</repository>
+	</distributionManagement>
+
 </project>
