@@ -30,9 +30,6 @@ public class BungeeUpdates {
 		SL = type.LikeSpiget;
 	}
 
-	/**
-	 * Why are you reading this? The name tells you what does it do
-	 */
 	public boolean IsUpdateRequired() {
 		String latest = getLatestVersion();
 		return !latest.equals(CurrentVersion);

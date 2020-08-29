@@ -130,7 +130,15 @@ public class BungeeConfig {
 			if (checkDataFolder()) {
 				return false;
 			}
-			File file = new File(plugin.getDataFolder() + "/" + messageFolder, messagesFilePrefix + lang);
+			File dir = new File(plugin.getDataFolder() + "/" + messageFolder);
+			if (!dir.exists()) {
+				boolean result = dir.mkdir();
+				if (!result) {
+					return false;
+				}
+			}
+
+			File file = new File(plugin.getDataFolder() + "/" + messageFolder, messagesFilePrefix + lang + ".yml");
 			if (!file.exists()) {
 				try (InputStream in = plugin.getResourceAsStream(messageFolder + "/" + messagesFilePrefix + lang + ".yml")) {
 					Files.copy(in, file.toPath());

@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>CoreAPI</artifactId>
 		<groupId>begad.mc.apis</groupId>
-		<version>v1.3</version>
+		<version>1.3.2</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 

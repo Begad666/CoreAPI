@@ -1,0 +1,6 @@
+updates:
+  start: "Checking for updates"
+  up-to-date: "You are up to date"
+  new: "New version: "
+  error-check: "Couldn't check for updates"
+  error-changed: "Please reinstall the plugin"
