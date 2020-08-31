@@ -16,16 +16,27 @@ public class SpigotCore extends JavaPlugin {
 
     @Override
     public void onLoad() {
-        updates = new SpigotUpdates(this, "CoreAPI", "82952", null, "v1.3", UpdateAPI.SPIGET);
+        updates = new SpigotUpdates(this, "CoreAPI", "82952", null, "1.3.3", UpdateAPI.SPIGET);
     }
 
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
         FileConfiguration configuration = this.getConfig();
-        File langFile = new File(getDataFolder(), "messages/lang.yml");
+        File dir = new File(getDataFolder() + "/messages");
+        if (!dir.exists()) {
+            if (!dir.mkdir()) {
+                this.getLogger().severe("Cannot create directories");
+                return;
+            }
+        }
+        File langFile = new File(dir, "lang.yml");
         if (!langFile.exists()) {
             try (InputStream in = this.getResource("messages/lang.yml")) {
+                if (in == null) {
+                    this.getLogger().severe("No language file found");
+                    return;
+                }
                 Files.copy(in, langFile.toPath());
             } catch (IOException e) {
                 e.printStackTrace();
