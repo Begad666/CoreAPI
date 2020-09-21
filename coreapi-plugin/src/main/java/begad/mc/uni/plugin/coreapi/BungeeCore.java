@@ -11,7 +11,7 @@ public class BungeeCore extends Plugin {
 
 	@Override
 	public void onLoad() {
-		updates = new BungeeUpdates(this, "CoreAPI", "82952", null, "1.3.3", UpdateAPI.SPIGET);
+		updates = new BungeeUpdates(this, "CoreAPI", "82952", null, "1.3.5", UpdateAPI.SPIGET);
 		config = new BungeeConfig(this, null, true, "", "messages");
 	}
 

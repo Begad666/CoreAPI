@@ -16,7 +16,7 @@ public class SpigotCore extends JavaPlugin {
 
     @Override
     public void onLoad() {
-        updates = new SpigotUpdates(this, "CoreAPI", "82952", null, "1.3.3", UpdateAPI.SPIGET);
+        updates = new SpigotUpdates(this, "CoreAPI", "82952", null, "1.3.5", UpdateAPI.SPIGET);
     }
 
     @Override
