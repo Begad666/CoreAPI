@@ -17,11 +17,12 @@ jobs:
         java-version: 1.8
         server-id: github
         settings-path: ${{ github.workspace }}
-
-    - name: Build with Maven
-      run: mvn -B package
-
-    - name: Publish to GitHub Packages Apache Maven
+    - name: Cache local Maven repository
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+    - name: Build and publish to GitHub Packages Apache Maven
       run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
