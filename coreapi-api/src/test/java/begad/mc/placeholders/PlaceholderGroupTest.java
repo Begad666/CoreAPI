@@ -21,7 +21,7 @@ public class PlaceholderGroupTest {
 
     @BeforeAll
     public void setUp() {
-        placeholderGroup = new PlaceholderGroup("Test", "%bungee_([A-Z]+):([A-Z]+)%", Pattern.CASE_INSENSITIVE);
+        placeholderGroup = new PlaceholderGroup("Test", "%bungee_([1-Z]+):([A-Z]+)%", Pattern.CASE_INSENSITIVE);
         placeholderGroup.addPlaceholder(new Placeholder("TestPlayers", "%bungee_(.*):players%", (String input, Matcher matcher) -> {
             String output = input;
             if (matcher.find()) {
