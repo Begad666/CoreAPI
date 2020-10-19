@@ -31,7 +31,9 @@ public abstract class CommandGroup extends Command implements TabExecutor {
             if (command != null) {
                 ArrayList<String> args = new ArrayList<>(Arrays.asList(strings));
                 args.remove(0);
-                command.run(commandSender, args);
+                String[] strs = new String[args.size()];
+                args.toArray(strs);
+                command.execute(commandSender, strs);
             } else {
                 commandSender.sendMessage(new TextComponent(this.notFound));
             }
